@@ -1,0 +1,21 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Inter', sans-serif;
+    font-family: 'KoHo', sans-serif;
+    box-sizing: border-box;
+}
+
+/*Home Page Section CSS */
+
+#home-page {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(45deg, rgba(0,0,0,0.85),rgba(118,0,255,0.85)),
+    url(../images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 8%;
+    text-align: center;
+    color: #fff;
+}

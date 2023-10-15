@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=KoHo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cee46afb86.js" crossorigin="anonymous"></script>
+    <title>Login Registration Form</title>
+    <link rel="stylesheet" href="css/login.css" type="text/css">
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+               <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-links">
+                <i class="fa fa-facebook"> <a href="#"></a> </i>
+                <i class="fa fa-instagram"><a href="#"></a> </i>
+                <i class="fa fa-twitter"><a href="#"></a> </i>
+                <i class="fa fa-youtube"><a href="#"></a> </i>
+            </div>
+            <!--Log in Form  -->
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box">
+                <span>Remember Password</span>
+                <button type="submit" class="submit-btn"> Log in </button>
+            </form>
+                <!--Registation Form  -->
+            <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box">
+                <span>I agree to the terms & condition</span>
+                <button type="submit" class="submit-btn"> Register </button>
+            </form>
+        </div> 
+    </div>
+    <!--Javascripts Code-->
+   <script>
+        var x = document.getElementById ("login");
+        var y = document.getElementById ("register");
+        var z = document.getElementById ("btn");
+
+        function register() {
+            x.style.left ="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        }
+
+        function login() {
+            x.style.left ="50px";
+            y.style.left="450px";
+            z.style.left="0px";
+        }
+    </script>
+</body>
+</html>

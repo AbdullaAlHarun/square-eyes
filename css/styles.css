@@ -19,3 +19,60 @@
     text-align: center;
     color: #fff;
 }
+
+nav {
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 6%;
+}
+
+.logo {
+    width:140px;
+    cursor: pointer;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  
+  .nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'KoHo', sans-serif;
+  }
+  
+  .nav-links ul li::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  
+  .nav-links ul li:hover::after {
+    width: 100%;
+  }
+
+  .hero-btn {
+    background: linear-gradient(#6a33ff, #351a80);
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+  }

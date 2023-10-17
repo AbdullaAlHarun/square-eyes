@@ -14,6 +14,7 @@
 <body>
     <header>
         <a href="index.html"><img src="images/logo.png" alt="square eyes logo"></a>
+        <div class="menu-btn"></div>
         <div class="navigation">
             <div class="navigation-itam">
                 <a href="#">Home</a>
@@ -34,31 +35,25 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit rerum inventore suscipit ipsam temporibus quas saepe fugiat explicabo voluptatum iste natus enim, consequuntur repudiandae odit adipisci corrupti, architecto perferendis minus.</p>
             <a href="#" class="hero-btn">Read more</a>
         </div>
+        <div class="media-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
     </section>
 
-    
-    <!--
-    <section id="header">
-        <nav>
-            <a href="index.html">
-                <img src="images/logo.png" class="logo" alt="this is university logo"/>
-            </a>
-            <div class="nav-links" id="navLinks">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Catagories</a></li>
-                    <li><a href="">Support</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Contact</a></li>
-                    <button class="hero-btn">
-                        <a href="login-form.html">Sign In</a>
-                    </button>
-                </ul>
-            </nav>
-            </div>
-        </nav>
-        
-    </section>
-    -->
+    <!--Javascripts-->
+    <script >
+        const menuBtn = document.querySelector (".menu-btn");
+        const navigation = document.querySelector (".navigation");
+
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+
+        menuBtn
+    </script>
 </body>
 </html>

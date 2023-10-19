@@ -173,6 +173,7 @@ section {
   display:flex;
   justify-content: center;
   align-items: center;
+  bottom: 0;
   transform: translateY(80px);
   margin-bottom: 12px;
 }
@@ -188,9 +189,7 @@ section {
   transition: 0.3s ease;
 }
 
-.nav-btn:not(:last-child) {
-margin: 20px;
-}
+
 
 @media (max-width:1040px) {
   header {

@@ -28,7 +28,7 @@ header .navigation {
   position: relative;
 }
 
- .navigation-itam a{
+.navigation-itam a{
   position: relative;
   color: #fff;
   font-size: 1em;
@@ -178,8 +178,7 @@ section {
   margin-bottom: 12px;
 }
 
-
- .nav-btn {
+.nav-btn {
   width: 12px;
   height: 12px;
   background: #fff;
@@ -189,7 +188,15 @@ section {
   transition: 0.3s ease;
 }
 
+.nav-btn:not(:last-child) {
+  margin-right: 20px;
+}
 
+.nav-btn:hover {
+  transform: scale(1.2);
+}
+
+/*https://www.youtube.com/watch?v=ThaIBFd387A 31.11 min */
 
 @media (max-width:1040px) {
   header {

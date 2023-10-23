@@ -196,7 +196,21 @@ section {
   transform: scale(1.2);
 }
 
-/*https://www.youtube.com/watch?v=ThaIBFd387A 31.11 min */
+.video-slide {
+  position:absolute;
+  width:100%;
+  clip-path: circle (0% at 0 50%);
+}
+
+.video-slide.active {
+  position:absolute;
+  width:100%;
+  clip-path: circle (0% at 0 50%);
+}
+
+.nav-btn.active {
+  background: #2696E9;
+}
 
 @media (max-width:1040px) {
   header {

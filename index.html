@@ -9,8 +9,8 @@
     <script src="https://kit.fontawesome.com/cee46afb86.js" crossorigin="anonymous"></script>
     <title>Square Eyes</title>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
-
 </head>
+
 <body>
     <header>
         <a href="index.html"><img src="images/logo.png" alt="square eyes logo"></a>
@@ -29,12 +29,14 @@
                 </button> 
             </div>            
         </div>
-        
-      
     </header>
 
     <section class="home">
         <video class="video-slide" src="video/1.mp4" autoplay muted loop> </video>
+        <video class="video-slide" src="video/2.mp4" autoplay muted loop> </video>
+        <video class="video-slide" src="video/3.mp4" autoplay muted loop> </video>
+        <video class="video-slide" src="video/1.mp4" autoplay muted loop> </video>
+        <video class="video-slide" src="video/4.mp4" autoplay muted loop> </video>
         <div class="content">
             <h1>Game of <br><span>Thrones</span></h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit rerum inventore suscipit ipsam temporibus quas saepe fugiat explicabo voluptatum iste natus enim, consequuntur repudiandae odit adipisci corrupti, architecto perferendis minus.</p>
@@ -47,7 +49,7 @@
         </div>
 
           <div class="slider-navigation">
-            <div class="nav-btn"></div>
+            <div class="nav-btn active"></div>
             <div class="nav-btn"></div>
             <div class="nav-btn"></div>
             <div class="nav-btn"></div>
@@ -60,7 +62,6 @@
         const menuBtn = document.querySelector (".menu-btn");
         const navigation = document.querySelector (".navigation");
 
-
         menuBtn.addEventListener("click", () => {
             menuBtn.classList.toggle("active");
             navigation.classList.toggle("active");
@@ -68,7 +69,28 @@
 
         menuBtn
 
-        //javascripts for viseo slider 
+        //javascripts for viseo slider navigation 
+
+        const btns = document.querySelectorAll(".nav-btn");
+        const slides = document.querySelectorAll(".video-slide");
+
+        var sliderNav = function (manual){
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            });
+
+            slides.forEach((slide) => {
+                slide.classList.remove("active");
+            });
+            
+            btns[manual].classList.add("active");
+            slides[manual].classList.add("active");
+        }
+        btns.forEach((btn,i)=> {
+            btn.addEventListener("click",()=>{
+                sliderNav(i);
+            });
+        });
     </script>
 </body>
 </html>

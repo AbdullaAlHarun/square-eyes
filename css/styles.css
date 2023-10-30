@@ -217,6 +217,15 @@ section {
   background: #2696E9;
 }
 
+/* Small (sm) */
+@media (min-width: 640px) {
+}
+/* Medium (md) */
+@media (min-width: 768px) {
+  
+
+}
+
 @media (max-width:1040px) {
   header {
     padding: 12px 20px;
@@ -286,3 +295,16 @@ section {
 }
 
 
+/* Large (lg) */
+@media (min-width: 1024px) {
+    
+}
+/* Extra Large (xl) */
+@media (min-width: 1280px) {
+    
+    }
+
+/* 2XL (2xl) */
+@media (min-width: 1536px) {
+    
+}

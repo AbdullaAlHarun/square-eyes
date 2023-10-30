@@ -64,6 +64,7 @@ width: 100%;
 transition: 0.3s ease;
 }
 
+
 @media (max-width:1040px) {
 header {
     padding: 12px 20px;

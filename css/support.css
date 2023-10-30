@@ -1,0 +1,133 @@
+*{
+    margin: 0; 
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-family: 'KoHo', sans-serif;
+    box-sizing: border-box;
+}
+
+.container { 
+    height: 100%; 
+    width: 100%; 
+    background-image: linear-gradient(45deg, rgba(0,0,0,0.85),rgba(118,0,255,0.85)),
+    url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+}
+
+header {
+z-index: 9999;
+position: absolute;
+top: 0;
+left: 0; 
+width:100% ;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 15px 200px;
+transition: 0.5s ease;
+}
+
+header img {
+width: 140px; 
+cursor: pointer;
+}
+
+.navigation {
+position: relative;
+}
+
+.navigation-itam a{
+position: relative;
+color: #fff;
+font-size: 1em;
+font-weight: 500;
+text-decoration: none;
+margin-left: 30px;
+transition: 0.3s ease;
+}
+
+.navigation-itam a::before {
+content: '';
+position: absolute;
+background: #fff;
+width: 0;
+height: 3px;
+bottom:0; 
+left:0;
+transition: 0.3s ease;
+}
+
+.navigation-itam a:hover:before{
+width: 100%;
+transition: 0.3s ease;
+}
+
+
+@media (max-width:1040px) {
+header {
+    padding: 12px 20px;
+}
+
+.media-icons {
+    right: 15px;
+}
+
+header .navigation {
+    display:none;
+}
+
+header .navigation.active{
+    position:fixed;
+    width:100%;
+    height:100vh;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgba(1,1,1,0.5);
+}
+
+.navigation-itam {
+    background: linear-gradient(45deg, rgba(0,0,0,0.85),rgba(118,0,255,0.85));
+    width: 600px;
+    max-width: 600px;
+    margin: 20px;
+    padding:40px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 20%);
+}
+
+.navigation-itam a {
+    color: #fff;
+    font-size: 1.2em;
+    margin: 20px;
+}
+
+.menu-btn {
+    background: url(../images/menu.png) no-repeat;
+    background-size: 30px;
+    background-position: center;
+    width:40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.menu-btn.active { 
+    z-index: 99;
+    background: url(../images/close.png)no-repeat;
+    background-size: 25px;
+    background-position: center;
+    transition: 0.3s ease;
+}
+  
+  }
+  
+  
+  

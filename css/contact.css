@@ -17,53 +17,75 @@
 }
 
 header {
-z-index: 9999;
-position: absolute;
-top: 0;
-left: 0; 
-width:100% ;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 15px 200px;
-transition: 0.5s ease;
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width:100% ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
 }
 
 header img {
-width: 140px; 
-cursor: pointer;
+    width: 140px; 
+    cursor: pointer;
 }
 
 .navigation {
-position: relative;
+    position: relative;
 }
 
 .navigation-itam a{
-position: relative;
-color: #fff;
-font-size: 1em;
-font-weight: 500;
-text-decoration: none;
-margin-left: 30px;
-transition: 0.3s ease;
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
 }
 
 .navigation-itam a::before {
-content: '';
-position: absolute;
-background: #fff;
-width: 0;
-height: 3px;
-bottom:0; 
-left:0;
-transition: 0.3s ease;
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 0;
+    height: 3px;
+    bottom:0; 
+    left:0;
+    transition: 0.3s ease;
 }
 
 .navigation-itam a:hover:before{
-width: 100%;
-transition: 0.3s ease;
+    width: 100%;
+    transition: 0.3s ease;
 }
 
+.hero-btn {
+    background: linear-gradient(#6a33ff, #351a80);
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 30px;
+  }
+  
+.hero-btn a {
+    margin: 10px auto;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'KoHo', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+  }
 
 @media (max-width:1040px) {
 header {
@@ -92,8 +114,8 @@ header .navigation.active{
 
 .navigation-itam {
     background: linear-gradient(45deg, rgba(0,0,0,0.85),rgba(118,0,255,0.85));
-    width: 600px;
-    max-width: 600px;
+    width: 380px;
+    max-width: 480px;
     margin: 20px;
     padding:40px;
     display:flex;
@@ -126,8 +148,139 @@ header .navigation.active{
     background-position: center;
     transition: 0.3s ease;
 }
-  
+.hero-btn {
+    margin: 0;
+  }
   }
   
   
-  
+  /*Contact information CSS */
+
+  .contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .content {
+    max-width: 800px;
+    text-align: center;
+  }
+
+  .content h2 { 
+    font-size: 36px;
+    font-weight: 500;
+    color:#fff;
+  }
+
+  .content p 
+  {
+    font-weight: 300;
+    color: #fff;
+  }
+
+  .mini-container {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 30px;
+  }
+
+  .contact-info {
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+  }
+
+  .box {
+    position: relative;
+    padding:20px 0;
+    display: flex;
+  }
+
+  .icon { 
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+  }
+
+  .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+  }
+
+  .text h3 {
+    font-weight: 500;
+    color: #8056f5;
+  }
+
+  .contact-form {
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+  }
+
+  .contact-form h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+  }
+
+  .input-box {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .input-box input, textarea
+   {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+  }
+
+  .input-box span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+  }
+
+  .input-box input:focus ~ span,
+  .input-box input:valid ~ span,
+  .input-box textarea:focus ~ span,
+  .input-box textarea:valid ~ span {
+    color: #e91e63;
+    font-size: 12px;
+    transform: translate(-20px);
+  }
+
+  .input-box input[type="submit"] {
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none
+  }

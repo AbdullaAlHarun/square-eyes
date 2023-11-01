@@ -14,20 +14,20 @@
     background-size: cover;
     background-position: center;
     position: absolute;
-    background-attachment: fixed;
+    background-repeat: repeat-y;
 }
 
 header {
-    z-index: 9999;
-    position: fixed;
-    top: 0;
-    left: 0; 
-    width:100% ;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 200px;
-    transition: 0.5s ease;
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0; 
+  width:100% ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 200px;
+  transition: 0.5s ease;
 }
 
 header img {

@@ -8,41 +8,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=KoHo:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/cee46afb86.js" crossorigin="anonymous"></script>
     <title>Square Eyes</title>
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/homepage.css" type="text/css">
 </head>
 
 <body>
-    <header>
-        <a href="index.html"><img src="images/logo.png" alt="square eyes logo"></a>
-        <div class="menu-btn"></div>
-        <div class="navigation">
-            <div>
-                <span class="navigation-itam">
-                    <a href="index.html">Home</a>
-                    <a href="catagories.html">Catagories</a>
-                    <a href="support.html">Support</a>
-                    <a href="about-us.html">About Us</a>
-                    <a href="contact.html">Contact</a>
-                    <button class="hero-btn">
-                        <a href="login-form.html">Sign In</a>
-                    </button> 
-                </span>
-                    
-            </div>
-        </div>
-    </header>
-
-    <section class="home">
-        <video class="video-slide active" src="video/1.mp4" autoplay muted loop> </video>
-       
-        <div class="content active">
-            <h1>Game of <br><span>Thrones</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit rerum inventore suscipit ipsam temporibus quas saepe fugiat explicabo voluptatum iste natus enim, consequuntur repudiandae odit adipisci corrupti, architecto perferendis minus.</p>
-            <a href="#" class="hero-btn">Read more</a>
-        </div>
-    </section>
-
-    <div class="mini-container">
+    <div class="header">
+      <nav>
+        <img src="images/logo.png" class="logo" alt="squareeyes logos">
+        <ul class="nav-links">
+            <li> <a href="index.html">Home</a></li>
+            <li><a href="catagories.html">Catagories</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="login-form.html" class="hero-btn">Sign In</a>
+      </nav>
+      <div class="container search">
+        <h1>Find Movies, Tv series and more..</h1>
+        <form action="" class="search-bar">
+            <input type="text" placeholder="Search movies and TV series">
+            <button type="submit"><img src="images/search.png" alt="search icon"></button>
+        </form>
+    </div>
+    </div>
+      
+    <div class="container">
         <h2 class="sub-title">Popular Movies</h2>
         <div class="popular-movies">
             <div>
@@ -109,6 +100,12 @@
                 <h3>Breaking Bad</h3>
                 <p>Drama, Trilar</p>
             </div>
+        </div>
+        <div class="solo">
+            <h3>Watch, Love, Support: <br> Be a Part of the Film Magic!</h3>
+            <p>Support Solo Filmmaker for 
+                Upcoming Movies</p>
+            <a href="support.html"class="hero-btn">Know more</a>
         </div>
 
     </div>

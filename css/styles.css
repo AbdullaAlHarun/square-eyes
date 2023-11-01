@@ -218,10 +218,49 @@ section {
 }
 
 
-/* Medium (md) */
-@media (min-width: 991px) {
+/* Popular Movies Sections */
+.mini-container {
+  padding: 0 7%;
+}
+.sub-title {
+  margin: 50px 0 20px;
+  font-size: 2.2vw;
+  font-weight: 500;
+  color: #333;
+}
 
+.popular-movies {
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap:30px;
+}
 
+.popular-movies div img {
+  width: 100%; 
+  border-radius: 10px;
+}
+
+.popular-movies div {
+  position: relative;
+}
+
+/* tv-series Sections */
+
+.tv-series {
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap:30px;
+  margin-bottom: 30px;
+}
+
+.tv-series div img {
+  width: 100%; 
+  border-radius: 10px;
+}
+
+.tv-series h3 {
+  font-weight: 600;
+  margin-top: 10px;
 }
 
 @media (max-width:1040px) {

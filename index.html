@@ -12,67 +12,74 @@
 </head>
 
 <body>
-    <header>
-        <a href="index.html"><img src="images/logo.png" alt="square eyes logo"></a>
-        <div class="menu-btn"></div>
-        <div class="navigation">
-            <div>
-                <span class="navigation-itam">
-                    <a href="index.html">Home</a>
-                    <a href="catagories.html">Catagories</a>
-                    <a href="support.html">Support</a>
-                    <a href="about-us.html">About Us</a>
-                    <a href="contact.html">Contact</a>
-                    <button class="hero-btn">
-                        <a href="login-form.html">Sign In</a>
-                    </button> 
-                </span>
-                    
-            </div>
-        </div>
-    </header>
-
-    <section class="home">
-        <video class="video-slide active" src="video/1.mp4" autoplay muted loop> </video>
-       
-        <div class="content active">
-            <h1>Game of <br><span>Thrones</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit rerum inventore suscipit ipsam temporibus quas saepe fugiat explicabo voluptatum iste natus enim, consequuntur repudiandae odit adipisci corrupti, architecto perferendis minus.</p>
-            <a href="#" class="hero-btn">Read more</a>
-        </div>
-    </section>
-
-    <div class="mini-container">
+    <div class="header">
+      <nav id="navBar">
+        <a href="index.html"> <img src="images/logo.png" class="logo" alt="squareeyes logos" > </a>
+        <ul class="nav-links">
+            <li> <a href="index.html" class="active">Home</a></li>
+            <li><a href="catagories.html">Catagories</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="login-form.html" class="hero-btn">Sign In</a>
+        <i class="fas fa-bars" onclick="togglebtn()"></i>
+    </nav>
+      <div class="container search">
+        <h1>Find Movies, Tv series and more..</h1>
+        <form action="" class="search-bar">
+            <input type="text" placeholder="Search movies and TV series">
+            <button type="submit"><img src="images/search.png" alt="search icon"></button>
+        </form>
+    </div>
+    </div>
+      
+    <div class="container">
         <h2 class="sub-title">Popular Movies</h2>
         <div class="popular-movies">
             <div>
                 <img src="images/popular1.PNG" alt="movie poster">
-                <h3>Life is Butiful</h3>
+                <h3>Life is Beutiful</h3>
                 <p>Drama, Comedy</p>
             </div>
             <div>
                 <img src="images/popular2.PNG" alt="movie poster">
-                <h3>Life is Butiful</h3>
+                <h3>Life is Beutiful</h3>
                 <p>Drama, Comedy</p>
             </div>
             <div>
                 <img src="images/popular3.PNG" alt="movie poster">
-                <h3>Life is Butiful</h3>
+                <h3>Life is Beutiful</h3>
                 <p>Drama, Comedy</p>
             </div>
             <div>
                 <img src="images/popular4.PNG" alt="movie poster">
-                <h3>Life is Butiful</h3>
+                <h3>Life is Beutiful</h3>
                 <p>Drama, Comedy</p>
             </div>
             <div>
                 <img src="images/popular5.PNG" alt="movie poster">
-                <h3>Life is Butiful</h3>
+                <h3>Life is Beutiful</h3>
                 <p>Drama, Comedy</p>
             </div>
             <div>
                 <img src="images/popular5.PNG" alt="movie poster">
-                <h3>Life is Butiful</h3>
+                <h3>Life is Beutiful</h3>
+                <p>Drama, Comedy</p>
+            </div>
+            <div>
+                <img src="images/popular1.PNG" alt="movie poster">
+                <h3>Life is Beutiful</h3>
+                <p>Drama, Comedy</p>
+            </div>
+            <div>
+                <img src="images/popular2.PNG" alt="movie poster">
+                <h3>Life is Beutiful</h3>
+                <p>Drama, Comedy</p>
+            </div>
+            <div>
+                <img src="images/popular3.PNG" alt="movie poster">
+                <h3>Life is Beutiful</h3>
                 <p>Drama, Comedy</p>
             </div>
         </div>
@@ -110,22 +117,37 @@
                 <p>Drama, Trilar</p>
             </div>
         </div>
+        <div class="solo">
+            <h3>Watch, Love, Support! <br> Be a Part of the Film Magic!</h3>
+            <p>Support Solo Filmmaker for 
+                Upcoming Movies</p>
+           <button class="solo-btn">
+            <a href="support.html">Know more</a>
+           </button>
+        </div>
+        <div class="footer">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instragram.com/"><i class="fab fa-instagram"></i></a>
+            <hr>
+            <p>
+                Copyright &copy; 2023, Abdulla Al Harun Mehedi.
+            </p>
+        </div>
+       
 
     </div>
 
     <!--Javascripts-->
-    <script >
-        const menuBtn = document.querySelector (".menu-btn");
-        const navigation = document.querySelector (".navigation");
 
-        menuBtn.addEventListener("click", () => {
-            menuBtn.classList.toggle("active");
-            navigation.classList.toggle("active");
-        });
+    <script>
+        var navBar = document.getElementById("navBar");
 
-        menuBtn
-
-       
+        function togglebtn() {
+            navBar.classList.toggle("hidemenu")
+        }
     </script>
 </body>
 </html>

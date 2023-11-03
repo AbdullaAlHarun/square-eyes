@@ -122,6 +122,11 @@ background: #58629b;
 cursor: pointer;
 }
 
+.search h3 {
+  color: #fff;
+  padding-bottom: 20px;
+}
+
 .solo { 
 background-image: linear-gradient(to right, #3f2321, transparent),
 url(../images/solo.jpg);
@@ -246,29 +251,118 @@ text-decoration: none;
 }
 
 /*Footer CSS */
-.footer {
-  margin: 80px 0 10px;
-  text-align: center;
+
+footer {
+  width: 100%;
+  bottom:0;
+  color: #fff;
+  padding: 10px 0 30px;
+  font-size: 13px;
+  line-height: 20px;
+  background: linear-gradient(45deg, rgba(0,0,0,0.85),rgba(118,0,255,0.85));
 }
 
-.footer a {
-  text-decoration: none;
-  color: #999;
-  font-size: 22px;
-  margin: 0 10px;
+.row {
+  padding: 0 7%;
+  display: flex;
+  margin: auto;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
-.footer hr {
-  background: #999;
-  height: 1px; 
-  width: 100%; 
-  border: 0;
+.col {
+flex-basis: 25%;
+padding: 10px;
+}
+
+.col:nth-child(2),
+.col:nth-child(3) {
+  flex-basis: 15%;
+}
+
+
+.col h3 {
+  width:fit-content;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #fff;
+}
+
+.email-id { 
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
   margin: 20px 0;
 }
 
-.footer p { 
-  padding-bottom: 15px;
+.col ul li {
+  list-style: none;
+  margin-bottom: 12px;
 }
+
+.col ul li a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.col form { 
+  display: flex;
+  padding-bottom: 15px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+
+.col form .far {
+  font-size: 18px;
+  margin-right: 10px;
+}
+.col form input { 
+  width: 100%; 
+  background: transparent;
+  color:#ece0e0;
+  outline: none;
+  border:0;
+}
+
+.col form button { 
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.col button .fa-solid {
+font-size: 16px;
+color: #fff; 
+}
+
+.col:placeholder {
+  color: #fff;
+}
+
+.social-icons .fab {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000; 
+  background: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.copyright {
+  color: #fff; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+
 
 nav .fa-bars {
   display: none;
@@ -385,10 +479,25 @@ nav .fa-bars {
     font-size: 14px;
   }
 
+   /*footer */
+   footer {
+    bottom: unset;
+ }
+.col {
+    flex-basis: 100%;
+   
+  }
   
-  .footer p {
-    font-size: 14px;
-}
-
-}
- 
+  .col:nth-child(2),
+  .col:nth-child(3) {
+      flex-basis: 100%;
+  }
+  
+  
+  footer .logo { 
+    width:140px;
+    cursor: pointer;
+  }
+  
+  }
+   

@@ -1,0 +1,374 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'KoHo', sans-serif;
+    margin:0;
+    padding:0;  
+  }
+  
+  /* header and menu CSS */
+  .header {
+    width: 100%; 
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(45deg, rgba(0,0,0,0.85),rgba(118,0,255,0.85));
+  }
+  
+  nav { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+    background: linear-gradient(45deg, rgba(0,0,0,0.85),rgba(118,0,255,0.85));
+   
+  }
+  
+  .logo { 
+    width:140px;
+    cursor: pointer;
+  }
+  
+  .nav-links li {
+    list-style: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 10px 10px;
+  }
+  
+  .nav-links li a{
+  position: relative;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 30px;
+  transition: 0.3s ease;
+  }
+  
+  .nav-links li a::before {
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 0;
+  height: 3px;
+  bottom:0; 
+  left:0;
+  transition: 0.3s ease;
+  }
+  
+  .nav-links li a:hover:before{
+  width: 100%;
+  transition: 0.3s ease;
+  }
+  
+  .hero-btn {
+  background: linear-gradient(#6a33ff, #351a80);
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 30px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 30px;
+  }
+  
+  .hero-btn a {
+  margin: 10px auto;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'KoHo', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  }
+  
+  nav .fa-bars {
+    display: none;
+  }
+  
+  /* checkput css */
+.container { 
+  padding: 0 7%;
+  background:  #fff;
+  }
+
+.cart-page { 
+   margin: 80px auto;  
+}  
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th{
+    text-align: left;
+    padding: 5px;
+    background: linear-gradient(#6a33ff, #351a80);
+    color: #fff;
+    font-weight: normal;
+ }
+
+td {
+    padding: 10px 5px;
+}
+
+td input {
+    width: 40px;
+    height: 30px; 
+    padding: 5px;
+}
+
+td a {
+    color: #351a80;
+    font-size: 12px;
+}
+
+td img {
+width: 100px;
+height:80px;
+margin-right: 10px;
+}
+
+.total-price {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table {
+    border-top: 3px solid #6a33ff;
+    width: 100%; 
+    max-width: 490px;;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+th:last-child {
+    text-align: right;
+}
+.hero-btn {
+    background: linear-gradient(#6a33ff, #351a80);
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 24px;
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    text-decoration: none;
+    }
+    
+.hero-btn a {
+    margin: 10px auto;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'KoHo', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*Footer CSS */
+
+footer {
+    width: 100%;
+    bottom:0;
+    color: #fff;
+    padding: 10px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+    background: linear-gradient(45deg, rgba(0,0,0,0.85),rgba(118,0,255,0.85));
+}
+
+.row {
+    padding: 0 7%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+  flex-basis: 25%;
+  padding: 10px;
+}
+
+.col:nth-child(2),
+.col:nth-child(3) {
+    flex-basis: 15%;
+}
+
+
+.col h3 {
+    width:fit-content;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #fff;
+}
+
+.email-id { 
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.col ul li {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+.col ul li a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.col form { 
+    display: flex;
+    padding-bottom: 15px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+.col form .far {
+    font-size: 18px;
+    margin-right: 10px;
+}
+.col form input { 
+    width: 100%; 
+    background: transparent;
+    color:#ece0e0;
+    outline: none;
+    border:0;
+}
+
+.col form button { 
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.col button .fa-solid {
+ font-size: 16px;
+ color: #fff; 
+}
+
+ .col:placeholder {
+    color: #fff;
+ }
+
+.social-icons .fab {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000; 
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+ }
+
+ .copyright {
+    color: #fff; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+ }
+
+/* Media queary for responsive */
+  
+@media (max-width: 700px) {
+  .logo { 
+    position: fixed;
+    top: 4%;
+    left: 7%;
+  }
+
+  nav {
+    position: fixed; 
+    top: 0; 
+    z-index: 100 ; 
+    display: inline-block;
+    width: 100%;
+    padding: 100px 7% 0;
+    background: linear-gradient(45deg, rgba(0,0,0,0.85),rgba(118,0,255,0.85));
+    text-align: right;
+    max-height: 100px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+
+  nav .nav-links li{
+    margin: 10px 0;
+    display: block;
+
+  }
+
+  .hero-btn { 
+    margin: 15px 0 30px; 
+    display: inline-block;
+  }
+
+  nav .fa-bars {
+    display: block;
+    position: fixed;
+    top: 4%; 
+    right: 7%; 
+    color: #fff;
+    font-size: 28px;
+  }
+
+  .active::after {
+    left: -40px;
+    transform: translate(0,50%);
+    bottom: 50%;
+  }
+
+  .hidemenu {
+    max-height: 350px;
+  }
+
+  .cart-page {
+    margin-top: 120px;
+  }
+
+  .cart-info p {
+    display:none;
+  }
+  
+  /*footer */
+  footer {
+    bottom: unset;
+ }
+.col {
+    flex-basis: 100%;
+   
+  }
+  
+  .col:nth-child(2),
+  .col:nth-child(3) {
+      flex-basis: 100%;
+  }
+  
+  
+  footer .logo { 
+    width:140px;
+    cursor: pointer;
+  }
+  
+}
+  

@@ -353,5 +353,42 @@ nav .fa-bars {
     font-weight: bold;
   }
 
+  
+  .popular-movies {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .popular-movies h3 {
+    font-size: 14px;
+  }
+  .popular-movies h3 span {
+    font-size: 14px;
+  }
+  .popular-movies p {
+    font-size: 14px;
+
+  }
+ 
+
+  .tv-series {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+   
+  }
+  
+  .tv-series h3 {
+    font-size: 14px;
+  }
+  .tv-series h3 span{
+    font-size: 14px;
+  }
+  .tv-series p {
+    font-size: 14px;
+  }
+
+  
+  .footer p {
+    font-size: 14px;
+}
+
 }
  

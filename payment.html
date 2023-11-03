@@ -113,9 +113,9 @@
                     <input type="text" maxlength="4" class="cvv-input">
                 </div>
             </div>
-            <input type="submit" value="submit" class="submit-btn">
+           <input type="submit" value="pay" class="submit-btn" id="pay-button">
         </form>
-    
+     <!-- Thank you pop up https://www.youtube.com/watch?v=AF6vGYIyV8M-->
     </div>    
 
       <!--Footer Section-->
@@ -178,6 +178,8 @@
             navBar.classList.toggle("hidemenu")
         }
 
+         // Cardview navigations javascripts
+
         document.querySelector('.card-number-input').oninput = () =>{
             document.querySelector('.card-number-box').innerText = document.querySelector('.card-number-input').value;
         }
@@ -208,6 +210,17 @@
             document.querySelector('.cvv-box').innerText = document.querySelector('.cvv-input').value;
         }
         
+        // Pay button navigations  java scripts
+
+        document.addEventListener("DOMContentLoaded", function() {
+    
+       var submitButton = document.getElementById("pay-button");
+
+      submitButton.addEventListener("click", function(event) {
+      event.preventDefault(); 
+      window.location.href = "index.html"; 
+    });
+  });
     </script>
     
 </body>

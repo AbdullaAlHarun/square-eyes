@@ -237,6 +237,7 @@ text-decoration: none;
 .tv-series div img {
   width: 100%; 
   border-radius: 10px;
+  height:250px;
 }
 
 .tv-series h3 {

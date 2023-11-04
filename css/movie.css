@@ -86,12 +86,52 @@
     display: none;
   }
   
-  /* Search bar */
+  /* content */
+
+.play-container {
+  min-height: 100vh; 
+  width: 100%; 
+  background-image: url(../images/movie-bg4.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
 .container { 
   padding: 0 7%;
-  background:  #fff;
+  display: flex;
   }
 
+.rating .fa-solid {
+  color: rgb(239, 172, 4); 
+  gap: 10px;
+  font-size: 24px;
+  padding-top: 10px;
+
+}
+
+.tags {
+  color: #fff;
+}
+
+.price {
+  color: red;
+  font-weight: bold; 
+  font-size: 24px;
+}
+
+.play-text .hero-btn { 
+  margin-left: 0; 
+  margin-top: 10px;
+}
+
+  .play-text h2{
+    
+    padding-top: 40%;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+  }
 
 /*Footer CSS */
 

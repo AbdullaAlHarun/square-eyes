@@ -110,12 +110,12 @@
 .about h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #323030;
+  color: #fff;
 }
 
 .about p {
   font-size: 1.5rem;
-  color: #323030;
+  color: #333;
   max-width: 800px;
   margin: 0 auto;
   font-weight: 600;

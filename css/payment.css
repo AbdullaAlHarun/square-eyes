@@ -2,11 +2,11 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     font-family: 'KoHo', sans-serif;
-    margin:0;
-    padding:0;  
+    margin:0; padding:0;  
   }
   
 /* header and menu CSS */
+
 .header { 
   width: 100%; 
   background-size: cover;
@@ -35,52 +35,52 @@ nav {
 }
 
 .nav-links li a{
-position: relative;
-color: #fff;
-font-size: 1em;
-font-weight: 500;
-text-decoration: none;
-margin-left: 30px;
-transition: 0.3s ease;
+  position: relative;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 30px;
+  transition: 0.3s ease;
 }
 
 .nav-links li a::before {
-content: '';
-position: absolute;
-background: #fff;
-width: 0;
-height: 3px;
-bottom:0; 
-left:0;
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 0;
+  height: 3px;
+  bottom:0; 
+  left:0;
 transition: 0.3s ease;
 }
 
 .nav-links li a:hover:before{
-width: 100%;
-transition: 0.3s ease;
+  width: 100%;
+  transition: 0.3s ease;
 }
 
 .hero-btn {
-background: linear-gradient(#6a33ff, #351a80);
-color: #fff;
-font-size: 16px;
-padding: 12px 24px;
-border-radius: 30px;
-border: 0;
-outline: 0;
-cursor: pointer;
-text-decoration: none;
-margin-left: 30px;
-}
+  background: linear-gradient(#6a33ff, #351a80);
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 30px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 30px;
+  }
 
 .hero-btn a {
-margin: 10px auto;
-color: #fff;
-font-size: 16px;
-font-family: 'KoHo', sans-serif;
-font-weight: 600;
-text-align: center;
-text-decoration: none;
+  margin: 10px auto;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'KoHo', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
 }
 
 nav .fa-bars {
@@ -427,6 +427,13 @@ color: #fff;
     }
   
     /*content responsive css */
+    
+    .container .card-container {
+      margin-top: 30%;
+    }
+  .container form {
+   width: 400px; 
+  }
 
   /*footer */
   footer {

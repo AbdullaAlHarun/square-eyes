@@ -1,4 +1,4 @@
-**#Square Eyes :: CA**
+# Square Eyes :: CA
 This repository contains my course assignment for the HTML and CSS course in the first semester of Frontend Development at Noroff School of Technology and Digital Media.
 
 ## About:

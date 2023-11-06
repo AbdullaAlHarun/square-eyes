@@ -41,110 +41,108 @@ nav{
 }
 
 .nav-links li a{
-position: relative;
-color: #fff;
-font-size: 1em;
-font-weight: 500;
-text-decoration: none;
-margin-left: 30px;
-transition: 0.3s ease;
+  position: relative;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 30px;
+  transition: 0.3s ease;
 }
 
 .nav-links li a::before {
-content: '';
-position: absolute;
-background: #fff;
-width: 0;
-height: 3px;
-bottom:0; 
-left:0;
-transition: 0.3s ease;
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 0;
+  height: 3px;
+  bottom:0; 
+  left:0;
+  transition: 0.3s ease;
 }
 
 .nav-links li a:hover:before{
-width: 100%;
-transition: 0.3s ease;
+  width: 100%;
+  transition: 0.3s ease;
 }
 
 .container { 
-padding: 0 7%;
+  padding: 0 7%;
 }
 
 .header h1 { 
-font-size: 4vw;
-font-weight: 500; 
-color: #fff; 
-text-align: center;
-padding-top: 20%;
-padding-bottom: 12px;
+  font-size: 4vw;
+  font-weight: 500; 
+  color: #fff; 
+  text-align: center;
+  padding-top: 20%;
+  padding-bottom: 12px;
 }
 .search {
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .search-bar {
-width:100%; 
-max-width: 700px;
-background: rgba(255, 255, 255, 0.2);
-display: flex;
-align-items: center;
-border-radius: 60px;
-padding: 10px 20px;;
+  width:100%; 
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px 20px;
 }
 
 .search-bar input{ 
-background: transparent;
-flex:1;
-border: 0; 
-outline: none; 
-padding: 6px 10px 6px 30px; 
-font-size: 20px;
-color: #cac7ff;
+  background: transparent;
+  flex:1;
+  border: 0; 
+  outline: none; 
+  padding: 6px 10px 6px 30px; 
+  font-size: 20px;
+  color: #cac7ff;
 }
 
 ::Placeholder { 
-color: #cac7ff;
+  color: #cac7ff;
 }
 
 .search-bar button img {
-width: 25px;
+  width: 25px;
 }
 
 .search-bar button { 
-border: 0; 
-border-radius: 50%;
-width: 60px; 
-height: 60px;
-background: #58629b;
-cursor: pointer;
+  border: 0; 
+  border-radius: 50%;
+  width: 60px; 
+  height: 60px;
+  background: #58629b;
+  cursor: pointer;
 }
 
-
-
 .hero-btn {
-background: linear-gradient(#6a33ff, #351a80);
-color: #fff;
-font-size: 16px;
-padding: 12px 24px;
-border-radius: 30px;
-border: 0;
-outline: 0;
-cursor: pointer;
-text-decoration: none;
-margin-left: 30px;
+  background: linear-gradient(#6a33ff, #351a80);
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 30px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 30px;
 }
 
 .hero-btn a {
-margin: 10px auto;
-color: #fff;
-font-size: 16px;
-font-family: 'KoHo', sans-serif;
-font-weight: 600;
-text-align: center;
-text-decoration: none;
+  margin: 10px auto;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'KoHo', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
 }
 
 /* Popular Movies Sections */
@@ -179,6 +177,7 @@ text-decoration: none;
   font-size: 18px;
   font-weight: 500;
 }
+
 /* tv-series Sections */
 
 .tv-series {
@@ -200,57 +199,57 @@ text-decoration: none;
 }
 
 /*app install section css */
+
 .search h3 {
   color: #fff;
   padding-bottom: 20px;
 }
 
 .solo { 
-background-image: linear-gradient(to right, #3f2321, transparent),
-url(../images/solo.jpg);
-background-size: cover;
-border-radius: 10px;
-padding: 5%;
-color: #fff;
-margin-bottom: 40px;
+  background-image: linear-gradient(to right, #3f2321, transparent),
+  url(../images/solo.jpg);
+  background-size: cover;
+  border-radius: 10px;
+  padding: 5%;
+  color: #fff;
+  margin-bottom: 40px;
 }
 
 .solo h3 { 
-font-size: 3vw;
-line-height:  4vw;
-font-weight: 500;
-color: #fff;
+  font-size: 3vw;
+  line-height:  4vw;
+  font-weight: 500;
+  color: #fff;
 }
 
-
 .solo p { 
-font-size: 18px;
-margin: 10px 0;
-color: #fff;
-font-weight: 600;
+  font-size: 18px;
+  margin: 10px 0;
+  color: #fff;
+  font-weight: 600;
 }
 
 .solo-btn {
-margin-top: 20px;
-background: linear-gradient(#6a33ff, #351a80);
-color: #fff;
-font-size: 16px;
-padding: 12px 24px;
-border-radius: 30px;
-border: 0;
-outline: 0;
-cursor: pointer;
-text-decoration: none;
+  margin-top: 20px;
+  background: linear-gradient(#6a33ff, #351a80);
+  color: #fff;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 30px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .solo-btn a {
-margin: 10px auto;
-color: #fff;
-font-size: 16px;
-font-family: 'KoHo', sans-serif;
-font-weight: 600;
-text-align: center;
-text-decoration: none;
+  margin: 10px auto;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'KoHo', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
 }
 
 .app img {
@@ -258,6 +257,7 @@ text-decoration: none;
   width: 120px;
   margin: 10px;
 }
+
 /*Footer CSS */
 
 footer {
@@ -280,8 +280,8 @@ footer {
 }
 
 .col {
-flex-basis: 25%;
-padding: 10px;
+  flex-basis: 25%;
+  padding: 10px;
 }
 
 .col:nth-child(2),
@@ -455,7 +455,6 @@ nav .fa-bars {
     font-weight: bold;
   }
 
-  
   .popular-movies {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
@@ -463,34 +462,38 @@ nav .fa-bars {
   .popular-movies h3 {
     font-size: 14px;
   }
+
   .popular-movies h3 span {
     font-size: 14px;
   }
+
   .popular-movies p {
     font-size: 14px;
 
   }
  
-
   .tv-series {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
    
   }
-  
+
   .tv-series h3 {
     font-size: 14px;
   }
+
   .tv-series h3 span{
     font-size: 14px;
   }
+
   .tv-series p {
     font-size: 14px;
   }
 
    /*footer */
-   footer {
+  footer {
     bottom: unset;
  }
+
 .col {
     flex-basis: 100%;
    
@@ -501,11 +504,9 @@ nav .fa-bars {
       flex-basis: 100%;
   }
   
-  
   footer .logo { 
     width:140px;
     cursor: pointer;
   }
-  
-  }
+}
    

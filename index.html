@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!--Header Section-->
     <div class="header">
       <nav id="navBar">
         <a href="index.html"> <img src="images/logo.png" class="logo" alt="squareeyes logos" > </a>
@@ -23,9 +24,11 @@
             <li><a href="catagories.html">Catagories</a></li>
             <li><a href="about-us.html">About Us</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i> My Cart</a></li>
         </ul>
         <a href="login-form.html" class="hero-btn">Sign In</a>
         <i class="fas fa-bars" onclick="togglebtn()"></i>
+       
     </nav>
         <div class="container search">
             <h1>Find Unlimited Movies, Tv series and more..</h1>
@@ -36,7 +39,9 @@
             </form>
         </div>
     </div>
-      
+    
+    <!--Content Section-->
+
     <div class="container">
         <h2 class="sub-title">Popular Movies</h2>
         <div class="popular-movies">
@@ -120,6 +125,9 @@
                 <p>Drama, Trilar</p>
             </div>
         </div>
+
+        <!--App Store promotion Sections-->
+
         <div class="solo">
             <h3>Watch, Love, Support! <br> Be a Part of the Film Magic!</h3>
             <p>Tap the icon to launch the app and start
@@ -149,8 +157,7 @@
             <p>Grunerløkka, 0459</p>
             <p>Oslo</p>
             <p class="email-id">info@squareeyes.com</p>
-            <h4> +47 000000000</h4>
-               
+            <h4> +47 000000000</h4> 
         </div>
        
         <div class="col">
@@ -162,6 +169,7 @@
                 <li><a href="#"></a>Cancelation Policy</li>
             </ul>
         </div>
+
         <div class="col">
             <h3>Newsletter</h3>
             <form >
@@ -175,7 +183,6 @@
                 <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
                 <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://www.instragram.com/"><i class="fab fa-instagram"></i></a>
-    
             </div>
         </div>
     </div>
@@ -183,15 +190,14 @@
     <p class="copyright">Square Eyes &copy; 2023 - All right Reserved </p>
 </footer>
 
+<!--Javascripts-->
 
-    <!--Javascripts-->
+<script>
+    var navBar = document.getElementById("navBar");
 
-    <script>
-        var navBar = document.getElementById("navBar");
-
-        function togglebtn() {
-            navBar.classList.toggle("hidemenu")
-        }
-    </script>
+    function togglebtn() {
+        navBar.classList.toggle("hidemenu")
+    }
+</script>
 </body>
 </html>

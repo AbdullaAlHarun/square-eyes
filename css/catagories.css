@@ -7,33 +7,34 @@
   }
   
   /* header and menu CSS */
-  .header {
-    width: 100%; 
-    background-size: cover;
-    background-position: center;
-  }
-  
-  nav { 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 7%;
-    background: linear-gradient(45deg, rgba(0,0,0,0.85),rgba(118,0,255,0.85));
-  }
-  
-  .logo { 
-    width:140px;
-    cursor: pointer;
-  }
-  
-  .nav-links li {
-    list-style: none;
-    display: inline-block;
-    font-size: 1em;
-    margin: 10px 10px;
-  }
-  
-  .nav-links li a{
+
+.header {
+  width: 100%; 
+  background-size: cover;
+  background-position: center;
+}
+
+nav { 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 7%;
+  background: linear-gradient(45deg, rgba(0,0,0,0.85),rgba(118,0,255,0.85));
+}
+
+.logo { 
+  width:140px;
+  cursor: pointer;
+}
+
+.nav-links li {
+  list-style: none;
+  display: inline-block;
+  font-size: 1em;
+  margin: 10px 10px;
+}
+
+.nav-links li a{
   position: relative;
   color: #fff;
   font-size: 1em;
@@ -41,9 +42,9 @@
   text-decoration: none;
   margin-left: 30px;
   transition: 0.3s ease;
-  }
-  
-  .nav-links li a::before {
+}
+
+.nav-links li a::before {
   content: '';
   position: absolute;
   background: #fff;
@@ -52,14 +53,14 @@
   bottom:0; 
   left:0;
   transition: 0.3s ease;
-  }
-  
-  .nav-links li a:hover:before{
+}
+
+.nav-links li a:hover:before{
   width: 100%;
   transition: 0.3s ease;
-  }
-  
-  .hero-btn {
+}
+
+.hero-btn {
   background: linear-gradient(#6a33ff, #351a80);
   color: #fff;
   font-size: 16px;
@@ -70,9 +71,9 @@
   cursor: pointer;
   text-decoration: none;
   margin-left: 30px;
-  }
-  
-  .hero-btn a {
+}
+
+.hero-btn a {
   margin: 10px auto;
   color: #fff;
   font-size: 16px;
@@ -80,37 +81,39 @@
   font-weight: 600;
   text-align: center;
   text-decoration: none;
-  }
-  
-  nav .fa-bars {
-    display: none;
-  }
+}
+
+nav .fa-bars {
+  display: none;
+}
   
   /* Search bar */
+
 .container { 
   padding: 0 7%;
   background:  #fff;
   }
 
 .search h1 { 
-  font-size: 3vw;
-  font-weight: 500; 
-  color: #fff; 
-  text-align: center;
-  padding-top: 2%;
-  margin-bottom: 1%;
-  padding-bottom: 12px;
+    font-size: 3vw;
+    font-weight: 500; 
+    color: #fff; 
+    text-align: center;
+    padding-top: 2%;
+    margin-bottom: 1%;
+    padding-bottom: 12px;
   }
-  .search {
+  
+.search {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding-bottom: 20px;
   background: linear-gradient(#6a33ff, #351a80);
-  }
-  
-  .search-bar {
+}
+
+.search-bar {
   width:100%; 
   max-width: 700px;
   background: rgba(255, 255, 255, 0.2);
@@ -118,9 +121,9 @@
   align-items: center;
   border-radius: 60px;
   padding: 10px 20px;
-  }
-  
-  .search-bar input{ 
+}
+
+.search-bar input{ 
   background: transparent;
   flex:1;
   border: 0; 
@@ -128,24 +131,24 @@
   padding: 6px 10px 6px 30px; 
   font-size: 20px;
   color: #cac7ff;
-  }
-  
-  ::Placeholder { 
+}
+
+::Placeholder { 
   color: #cac7ff;
-  }
-  
-  .search-bar button img {
+}
+
+.search-bar button img {
   width: 25px;
-  }
-  
-  .search-bar button { 
+}
+
+.search-bar button { 
   border: 0; 
   border-radius: 50%;
   width: 60px; 
   height: 60px;
   background: #58629b;
   cursor: pointer;
-  }
+}
 
   /* Popular Movies Sections */
 
@@ -182,7 +185,7 @@
 .popular-movies h3 span{
   font-size: 18px;
   font-weight: 600;
-  color: red;
+  color: rgb(239, 16, 16);
   float: inline-end;
 }
 
@@ -420,12 +423,10 @@ color: #fff;
   }
   .popular-movies p {
     font-size: 14px;
-
   }
 
   .tv-series {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-   
   }
   
   .tv-series h3 {
@@ -454,11 +455,10 @@ color: #fff;
       flex-basis: 100%;
   }
   
-  
   footer .logo { 
     width:140px;
     cursor: pointer;
   }
   
-  }
+}
    

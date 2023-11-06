@@ -87,20 +87,73 @@
   }
   
   /* content */
-
-.play-container {
-  min-height: 100vh; 
+.home { 
   width: 100%; 
-  background-image: url(../images/movie-bg4.png);
-  background-size: cover;
-  background-position: center;
-  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.home video {
+  z-index: 000;
+  position: absolute;
+  left: 0; 
+  top: 103px;
+  bottom: 200px;
+  width: 100%; 
+  height: 800px;
+  object-fit: cover;
+}
+.content {
+  z-index: 888;
+  color: #fff;
+  padding: 0 7%; 
+  margin-top: 10px;
+}
+.content .hero-btn { 
+  margin-left: 0; 
+  margin-top: 10px;
+  background: linear-gradient(to right, #0077ff, #0099ff);
 }
 
-.container { 
-  padding: 0 7%;
-  display: flex;
+.content .buy{ 
+  background: #e0b54b !important; 
+}
+
+.content h2{
+  position: relative;
+  font-size: 8vw;
+  color: #351a80;
+  -webkit-text-stroke: 0.3vw #fff;
+  text-transform: uppercase;
+}
+
+.content h2::before { 
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0; 
+  height: 100%; 
+  color: #01fe87;
+  white-space:no-wrap; 
+  -webkit-text-stroke: 0vw #fff;
+  border-right: 2px solid #01fe87;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+
+@keyframes animate  {
+  0%,10%,100%
+  {
+    width: 0; 
   }
+  70%,90%
+  {
+    width: 100%;
+  }
+}
 
 .rating .fa-solid {
   color: rgb(239, 172, 4); 
@@ -111,29 +164,32 @@
 }
 
 .tags {
+  padding-top: 10px;
   color: #fff;
+}
+.tag span { 
+  padding-right: 10px;;
+}
+
+.fa-imdb {
+  padding-right: 6px;
 }
 
 .price {
   color: red;
   font-weight: bold; 
   font-size: 24px;
+  margin-top: 20px;
 }
 
-.play-text .hero-btn { 
-  margin-left: 0; 
-  margin-top: 10px;
+.movie-content p{ 
+  margin-top: 20px;
 }
 
-  .play-text h2{
-
-    padding-top: 40%;
-    color: #fff;
-    font-size: 30px;
-    align-self: flex-end;
-    font-weight: bold;
-  }
-
+.movie-content span{ 
+  font-weight: bold;
+  font-size: 20px;
+}
 
 /*demo content css */
 
@@ -142,6 +198,7 @@
 /*Footer CSS */
 
 footer {
+  margin-top: 5%;
   width: 100%;
   bottom:0;
   color: #fff;
@@ -312,6 +369,7 @@ color: #fff;
  /*footer */
  footer {
   bottom: unset;
+  margin-top: 53%;
 }
 .col {
   flex-basis: 100%;

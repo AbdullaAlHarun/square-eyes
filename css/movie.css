@@ -2,38 +2,37 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     font-family: 'KoHo', sans-serif;
-    margin:0;
-    padding:0;  
+    margin:0; padding:0;  
   }
   
-  /* header and menu CSS */
-  .header {
-    width: 100%; 
-    background-size: cover;
-    background-position: center;
-  }
-  
-  nav { 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 7%;
-    background: linear-gradient(45deg, rgba(0,0,0,0.85),rgba(118,0,255,0.85));
-  }
-  
-  .logo { 
-    width:140px;
-    cursor: pointer;
-  }
-  
-  .nav-links li {
-    list-style: none;
-    display: inline-block;
-    font-size: 1em;
-    margin: 10px 10px;
-  }
-  
-  .nav-links li a{
+/* header and menu CSS */
+.header {
+  width: 100%; 
+  background-size: cover;
+  background-position: center;
+}
+
+nav { 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 7%;
+  background: linear-gradient(45deg, rgba(0,0,0,0.85),rgba(118,0,255,0.85));
+}
+
+.logo { 
+  width:140px;
+  cursor: pointer;
+}
+
+.nav-links li {
+  list-style: none;
+  display: inline-block;
+  font-size: 1em;
+  margin: 10px 10px;
+}
+
+.nav-links li a{
   position: relative;
   color: #fff;
   font-size: 1em;
@@ -41,9 +40,9 @@
   text-decoration: none;
   margin-left: 30px;
   transition: 0.3s ease;
-  }
-  
-  .nav-links li a::before {
+}
+
+.nav-links li a::before {
   content: '';
   position: absolute;
   background: #fff;
@@ -52,14 +51,14 @@
   bottom:0; 
   left:0;
   transition: 0.3s ease;
-  }
-  
-  .nav-links li a:hover:before{
+}
+
+.nav-links li a:hover:before{
   width: 100%;
   transition: 0.3s ease;
-  }
-  
-  .hero-btn {
+}
+
+.hero-btn {
   background: linear-gradient(#6a33ff, #351a80);
   color: #fff;
   font-size: 16px;
@@ -70,9 +69,9 @@
   cursor: pointer;
   text-decoration: none;
   margin-left: 30px;
-  }
-  
-  .hero-btn a {
+}
+
+.hero-btn a {
   margin: 10px auto;
   color: #fff;
   font-size: 16px;
@@ -80,11 +79,11 @@
   font-weight: 600;
   text-align: center;
   text-decoration: none;
-  }
-  
-  nav .fa-bars {
-    display: none;
-  }
+}
+
+nav .fa-bars {
+  display: none;
+}
   
   /* content */
 .home { 
@@ -93,8 +92,8 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-
 }
+
 .home video {
   z-index: 000;
   position: absolute;
@@ -105,12 +104,14 @@
   height: 800px;
   object-fit: cover;
 }
+
 .content {
   z-index: 888;
   color: #fff;
   padding: 0 7%; 
   margin-top: 10px;
 }
+
 .content .hero-btn { 
   margin-left: 0; 
   margin-top: 10px;
@@ -136,10 +137,10 @@
   left: 0;
   width: 0; 
   height: 100%; 
-  color: #01fe87;
+  color: #0099ff;
   white-space:no-wrap; 
   -webkit-text-stroke: 0vw #fff;
-  border-right: 2px solid #01fe87;
+  border-right: 2px solid #0099ff;
   overflow: hidden;
   animation: animate 6s linear infinite;
 }
@@ -160,7 +161,6 @@
   gap: 10px;
   font-size: 24px;
   padding-top: 10px;
-
 }
 
 .tags {
@@ -191,10 +191,6 @@
   font-size: 20px;
 }
 
-/*demo content css */
-
-
-
 /*Footer CSS */
 
 footer {
@@ -218,15 +214,14 @@ footer {
 }
 
 .col {
-flex-basis: 25%;
-padding: 10px;
+  flex-basis: 25%;
+  padding: 10px;
 }
 
 .col:nth-child(2),
 .col:nth-child(3) {
   flex-basis: 15%;
 }
-
 
 .col h3 {
   width:fit-content;
@@ -280,8 +275,8 @@ padding: 10px;
 }
 
 .col button .fa-solid {
-font-size: 16px;
-color: #fff; 
+  font-size: 16px;
+  color: #fff; 
 }
 
 .col:placeholder {
@@ -309,7 +304,6 @@ color: #fff;
   padding: 8px;
 }
 
-  
 /* Media queary for responsive */
   
 @media (max-width: 700px) {
@@ -363,29 +357,25 @@ color: #fff;
     max-height: 350px;
   }
 
-  /*content responsive css */
-
-
  /*footer */
- footer {
-  bottom: unset;
-  margin-top: 53%;
-}
-.col {
-  flex-basis: 100%;
- 
-}
-
-.col:nth-child(2),
-.col:nth-child(3) {
+  footer {
+    bottom: unset;
+    margin-top: 53%;
+  }
+  .col {
     flex-basis: 100%;
-}
+  
+  }
 
+  .col:nth-child(2),
+  .col:nth-child(3) {
+      flex-basis: 100%;
+  }
 
-footer .logo { 
-  width:140px;
-  cursor: pointer;
-}
+  footer .logo { 
+    width:140px;
+    cursor: pointer;
+  }
 
 }
  

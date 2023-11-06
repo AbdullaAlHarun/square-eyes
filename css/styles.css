@@ -1,10 +1,11 @@
 *{
-  margin:0;
-  padding:0;
   font-family: 'Inter', sans-serif;
   font-family: 'KoHo', sans-serif;
+  margin:0; padding:0;
   box-sizing: border-box;
 }
+
+/* header and menu CSS */
 
 .header {
   min-height: 100vh; 
@@ -21,7 +22,7 @@ nav{
   align-items: center;
   justify-content: space-between;
   padding: 20px 7%;
-  top: o;
+  top: 0;
   z-index: 100;
   width: 100%;
   background: linear-gradient(45deg, rgba(0,0,0,0.85),rgba(118,0,255,0.85));
@@ -289,7 +290,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 /*Footer CSS */
 
 footer {
@@ -320,7 +320,6 @@ footer {
 .col:nth-child(3) {
   flex-basis: 15%;
 }
-
 
 .col h3 {
   width:fit-content;
@@ -358,6 +357,7 @@ footer {
   font-size: 18px;
   margin-right: 10px;
 }
+
 .col form input { 
   width: 100%; 
   background: transparent;
@@ -374,8 +374,8 @@ footer {
 }
 
 .col button .fa-solid {
-font-size: 16px;
-color: #fff; 
+  font-size: 16px;
+  color: #fff; 
 }
 
 .col:placeholder {
@@ -402,7 +402,6 @@ color: #fff;
   justify-content: center;
   padding: 8px;
 }
-
 
 nav .fa-bars {
   display: none;
@@ -434,7 +433,6 @@ nav .fa-bars {
   nav .nav-links li{
     margin: 10px 0;
     display: block;
-
   }
 
   .hero-btn { 
@@ -470,7 +468,8 @@ nav .fa-bars {
     border-radius: 50%;
     width: 45px;
     height: 45px;
-}
+  }
+
   .search-bar button img {
     width: 20px;
   }
@@ -501,12 +500,10 @@ nav .fa-bars {
 
   .popular-movies p {
     font-size: 14px;
-
   }
  
   .tv-series {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-   
   }
 
   .tv-series h3 {
@@ -526,9 +523,8 @@ nav .fa-bars {
     bottom: unset;
  }
 
-.col {
+  .col {
     flex-basis: 100%;
-   
   }
   
   .col:nth-child(2),

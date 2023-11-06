@@ -1,8 +1,8 @@
 *{
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-    font-family: 'KoHo', sans-serif;
-    margin:0; padding:0;  
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-family: 'KoHo', sans-serif;
+  margin:0; padding:0;  
   }
   
 /* header and menu CSS */
@@ -19,7 +19,6 @@ nav {
   justify-content: space-between;
   padding: 20px 7%;
   background: linear-gradient(45deg, rgba(0,0,0,0.85),rgba(118,0,255,0.85));
-
 }
 
 .logo { 
@@ -261,7 +260,7 @@ nav .fa-bars {
 
  /*Footer CSS */
 
- footer {
+footer {
   width: 100%;
   bottom:0;
   color: #fff;
@@ -281,15 +280,14 @@ nav .fa-bars {
 }
 
 .col {
-flex-basis: 25%;
-padding: 10px;
+  flex-basis: 25%;
+  padding: 10px;
 }
 
 .col:nth-child(2),
 .col:nth-child(3) {
   flex-basis: 15%;
 }
-
 
 .col h3 {
   width:fit-content;
@@ -327,6 +325,7 @@ padding: 10px;
   font-size: 18px;
   margin-right: 10px;
 }
+
 .col form input { 
   width: 100%; 
   background: transparent;
@@ -343,8 +342,8 @@ padding: 10px;
 }
 
 .col button .fa-solid {
-font-size: 16px;
-color: #fff; 
+  font-size: 16px;
+  color: #fff; 
 }
 
 .col:placeholder {
@@ -372,8 +371,7 @@ color: #fff;
   padding: 8px;
 }
 
-  
-  /* Media queary for responsive */
+/* Media queary for responsive */
   
   @media (max-width: 700px) {
     .logo { 
@@ -431,15 +429,15 @@ color: #fff;
     .container .card-container {
       margin-top: 30%;
     }
-  .container form {
-   width: 400px; 
-  }
+    .container form {
+    width: 400px; 
+    }
 
   /*footer */
   footer {
     bottom: unset;
  }
-.col {
+  .col {
     flex-basis: 100%;
    
   }
@@ -449,11 +447,10 @@ color: #fff;
       flex-basis: 100%;
   }
   
-  
   footer .logo { 
     width:140px;
     cursor: pointer;
   }
   
-  }
+}
    

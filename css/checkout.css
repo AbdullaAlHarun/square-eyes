@@ -2,8 +2,7 @@
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     font-family: 'KoHo', sans-serif;
-    margin:0;
-    padding:0;  
+    margin:0; padding:0;  
   }
   
 /* header and menu CSS */
@@ -20,7 +19,6 @@ nav {
   justify-content: space-between;
   padding: 20px 7%;
   background: linear-gradient(45deg, rgba(0,0,0,0.85),rgba(118,0,255,0.85));
-  
 }
 
 .logo { 
@@ -152,8 +150,9 @@ td:last-child {
 }
 
 th:last-child {
-    text-align: right;
+  text-align: right;
 }
+
 .hero-btn {
   background: linear-gradient(#6a33ff, #351a80);
   color: #fff;
@@ -164,7 +163,7 @@ th:last-child {
   outline: 0;
   cursor: pointer;
   text-decoration: none;
-    }
+  }
     
 .hero-btn a {
   margin: 10px auto;
@@ -206,7 +205,6 @@ footer {
 .col:nth-child(3) {
   flex-basis: 15%;
 }
-
 
 .col h3 {
   width:fit-content;
@@ -265,29 +263,29 @@ footer {
   color: #fff; 
 }
 
- .col:placeholder {
+.col:placeholder {
     color: #fff;
  }
 
 .social-icons .fab {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    font-size: 20px;
-    color: #000; 
-    background: #fff;
-    margin-right: 15px;
-    cursor: pointer;
- }
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #000; 
+  background: #fff;
+  margin-right: 15px;
+  cursor: pointer;
+}
 
- .copyright {
-    color: #fff; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px;
+.copyright {
+  color: #fff; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
  }
 
 /* Media queary for responsive */
@@ -354,8 +352,8 @@ footer {
   /*footer */
   footer {
     bottom: unset;
- }
-.col {
+  }
+  .col {
     flex-basis: 100%;
    
   }

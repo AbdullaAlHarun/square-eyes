@@ -1,4 +1,4 @@
-# Square Eyes :: CA [Visit our website](https://square-eyes.vercel.app/)
+# Square Eyes :: CA [Visit Square Eyes website](https://square-eyes.vercel.app/)
 This repository contains my course assignment for the HTML and CSS course in the first semester of Frontend Development at Noroff School of Technology and Digital Media.
 
 ## About:

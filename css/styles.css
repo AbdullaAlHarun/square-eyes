@@ -6,7 +6,6 @@
 }
 
 /* header and menu CSS */
-
 .header {
   min-height: 100vh; 
   width: 100%; 
@@ -147,7 +146,6 @@ nav{
 }
 
 /* Popular Movies Sections */
-
 .mini-container .solo{
   padding: 0 7%;
 }
@@ -180,7 +178,6 @@ nav{
 }
 
 /* tv-series Sections */
-
 .tv-series {
   display: grid; 
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -200,7 +197,6 @@ nav{
 }
 
 /*app install section css */
-
 .search h3 {
   color: #fff;
   padding-bottom: 20px;
@@ -260,7 +256,6 @@ nav{
 }
 
 /*to top btn css */
-
 .to-top {
   background: white;
   position: fixed;
@@ -291,7 +286,6 @@ html {
 }
 
 /*Footer CSS */
-
 footer {
   width: 100%;
   bottom:0;
@@ -408,7 +402,6 @@ nav .fa-bars {
 }
 
 /* Media queary for responsive */
-
 @media (max-width: 700px) {
   .logo { 
     position: fixed;
@@ -529,7 +522,7 @@ nav .fa-bars {
   
   .col:nth-child(2),
   .col:nth-child(3) {
-      flex-basis: 100%;
+     flex-basis: 100%;
   }
   
   footer .logo { 

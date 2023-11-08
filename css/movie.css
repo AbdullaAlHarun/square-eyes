@@ -1,8 +1,8 @@
 *{
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-    font-family: 'KoHo', sans-serif;
-    margin:0; padding:0;  
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-family: 'KoHo', sans-serif;
+  margin:0; padding:0;  
   }
   
 /* header and menu CSS */
@@ -85,7 +85,7 @@ nav .fa-bars {
   display: none;
 }
   
-  /* content */
+/* content */
 .home { 
   width: 100%; 
   min-height: 100vh;
@@ -192,7 +192,6 @@ nav .fa-bars {
 }
 
 /*Footer CSS */
-
 footer {
   margin-top: 5%;
   width: 100%;
@@ -259,6 +258,7 @@ footer {
   font-size: 18px;
   margin-right: 10px;
 }
+
 .col form input { 
   width: 100%; 
   background: transparent;
@@ -305,7 +305,6 @@ footer {
 }
 
 /* Media queary for responsive */
-  
 @media (max-width: 700px) {
   .logo { 
     position: fixed;
@@ -376,6 +375,5 @@ footer {
     width:140px;
     cursor: pointer;
   }
-
 }
  

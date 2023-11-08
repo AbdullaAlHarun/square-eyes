@@ -6,7 +6,6 @@
   }
   
 /* header and menu CSS */
-
 .header { 
   width: 100%; 
   background-size: cover;
@@ -51,7 +50,7 @@ nav {
   height: 3px;
   bottom:0; 
   left:0;
-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .nav-links li a:hover:before{
@@ -259,7 +258,6 @@ nav .fa-bars {
 }
 
  /*Footer CSS */
-
 footer {
   width: 100%;
   bottom:0;
@@ -372,7 +370,6 @@ footer {
 }
 
 /* Media queary for responsive */
-  
   @media (max-width: 700px) {
     .logo { 
       position: fixed;
@@ -425,7 +422,6 @@ footer {
     }
   
     /*content responsive css */
-    
     .container .card-container {
       margin-top: 30%;
     }
@@ -450,7 +446,6 @@ footer {
   footer .logo { 
     width:140px;
     cursor: pointer;
-  }
-  
+  } 
 }
    

@@ -176,7 +176,6 @@ th:last-child {
 }
 
 /*Footer CSS */
-
 footer {
   width: 100%;
   bottom:0;
@@ -289,7 +288,6 @@ footer {
  }
 
 /* Media queary for responsive */
-  
 @media (max-width: 700px) {
   .logo { 
     position: fixed;
@@ -355,7 +353,6 @@ footer {
   }
   .col {
     flex-basis: 100%;
-   
   }
   
   .col:nth-child(2),
@@ -367,6 +364,5 @@ footer {
     width:140px;
     cursor: pointer;
   }
-  
 }
   

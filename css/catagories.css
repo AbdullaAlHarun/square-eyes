@@ -5,8 +5,7 @@
     margin:0; padding:0;  
   }
   
-  /* header and menu CSS */
-
+/* header and menu CSS */
 .header {
   width: 100%; 
   background-size: cover;
@@ -87,8 +86,7 @@ nav .fa-bars {
   display: none;
 }
   
-  /* Search bar */
-
+/* Search bar */
 .container { 
   padding: 0 7%;
   background:  #fff;
@@ -151,10 +149,10 @@ nav .fa-bars {
 }
 
 /* Popular Movies Sections */
-
 .mini-container .solo{
   padding: 0 7%;
 }
+
 .sub-title {
   margin: 50px 0 20px;
   font-size: 1.8vw;
@@ -190,7 +188,6 @@ nav .fa-bars {
 }
 
 /* tv-series Sections */
-
 .tv-series {
   display: grid; 
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -217,7 +214,6 @@ nav .fa-bars {
 }
 
 /*Footer CSS */
-
 footer {
   width: 100%;
   bottom:0;
@@ -300,8 +296,8 @@ padding: 10px;
 }
 
 .col button .fa-solid {
-font-size: 16px;
-color: #fff; 
+  font-size: 16px;
+  color: #fff; 
 }
 
 .col:placeholder {
@@ -330,7 +326,6 @@ color: #fff;
 }
 
 /*to top btn css */
-
 .to-top {
   background: white;
   position: fixed;
@@ -361,7 +356,6 @@ html {
 }
   
 /* Media queary for responsive */
-  
 @media (max-width: 700px) {
   .logo { 
     position: fixed;
@@ -414,7 +408,6 @@ html {
   }
 
   /*content responsive css */
-
   .search h1 {
     padding-top: 150px;
     font-size: 7vw;
@@ -424,6 +417,7 @@ html {
     width: 45px;
     height: 45px;
   }
+
   .search-bar button img {
     width: 20px;
   }
@@ -450,6 +444,7 @@ html {
   .popular-movies h3 span {
     font-size: 14px;
   }
+
   .popular-movies p {
     font-size: 14px;
   }
@@ -473,7 +468,8 @@ html {
   /*footer */
   footer {
     bottom: unset;
- }
+  }
+
   .col {
     flex-basis: 100%;
    
@@ -481,13 +477,12 @@ html {
   
   .col:nth-child(2),
   .col:nth-child(3) {
-      flex-basis: 100%;
+    flex-basis: 100%;
   }
   
   footer .logo { 
     width:140px;
     cursor: pointer;
   }
-  
 }
    

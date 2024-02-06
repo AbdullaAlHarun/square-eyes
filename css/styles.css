@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+
 /* header and menu CSS */
 .header {
   min-height: 100vh; 
@@ -145,6 +146,75 @@ nav{
   text-align: center;
   text-decoration: none;
 }
+
+
+/*New content body section 2024*/ 
+.container-body {
+  margin: 2% 7%;
+  padding: 0 2rem;
+}
+
+.products { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+  gap: 1rem;
+}
+
+.product {
+  background:  linear-gradient(80deg, rgba(73,95,121,1) 20%, rgba(5,111,166,1) 38%, rgba(0,71,64,1) 100%);
+  padding: 0 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 16px;
+}
+
+.products img {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+  height: 550px;
+}
+.product-content {
+  padding: 1rem 2rem;
+}
+
+.products .product-title {
+  font-size: 2rem;
+}
+
+.product-description {
+  text-align: justify;
+}
+
+.product-title,
+.product-price-container,
+.product-description, 
+.product-catagory {
+  padding: 0.5rem 0;
+  color: #fff;
+}
+
+.product-price-container {
+  padding-top: 2rem;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-price {
+  color: red;
+}
+
+.add-to-cart {
+  background: linear-gradient(#6a33ff, #351a80);
+  padding: 0.6rem 1.5rem;
+  font-weight: 500;
+  color: white; 
+  border-radius: 1rem;
+  text-decoration: none;
+}
+
+
 
 /* Popular Movies Sections */
 .mini-container .solo{

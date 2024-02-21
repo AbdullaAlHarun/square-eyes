@@ -16,34 +16,44 @@
 <body>
     <!--Header Section-->
     <div class="header">
-      <nav id="navBar">
-        <a href="index.html" aria-label="logo, click to go to home"> <img src="images/logo.png" class="logo" alt="squareeyes logos" > </a>
-        <ul class="nav-links">
-            <li> <a href="index.html" class="active">Home</a></li>
-            <li><a href="catagories.html">Catagories</a></li>
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping" aria-label="go to cart"></i> My Cart</a></li>
-        </ul>
-        <a href="login-form.html" class="hero-btn" aria-label="sign in button">Sign In</a>
-        <i class="fas fa-bars" aria-label="menu" onclick="togglebtn()"></i>
-       
-    </nav>
-        <!-- <div class="container search">
-            <h1>Find Unlimited Movies, Tv series and more..</h1>
-            <h3>Watch anywhere.Stream, Support, and Explore: Where Movies Meet Makers!</h3>
-            <form action="" class="search-bar">
-                <input type="text" placeholder="Search movies and TV series">
-                <button type="submit"><img src="images/search.png" alt="search icon"></button>
-            </form>
-        </div> -->
+        <nav id="navBar">
+            <a href="index.html" aria-label="logo, click to go to home"> <img src="images/logo.png" class="logo" alt="squareeyes logos" > </a>
+            <ul class="nav-links">
+                <li> <a href="index.html" class="active">Home</a></li>
+                <li><a href="catagories.html">Catagories</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping" aria-label="go to cart"></i> My Cart</a></li>
+            </ul>
+            <a href="login-form.html" class="hero-btn" aria-label="sign in button">Sign In</a>
+            <i class="fas fa-bars" aria-label="menu" onclick="togglebtn()"></i>
+        </nav>
+   
     </div>
 
 
     <!--Main content Section!-->
     <div class="container-body">
+        <div class="container">
+            <div class="catagory">
+                <h2>Catagories Filter:</h2>
+                <ul>
+                    <li><a href="#">Show All</a></li>
+                    <li><a href="#">Drama</a></li> 
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Kids</a></li> 
+                    <li><a href="#">Comedy</a></li>
+                    <li><a href="#">Horror</a></li>
+                </ul>
+            </div>
+            <div class="products">
+                
+            </div>
+        </div>
+
+        <!--All Movie loading Section -->
         <div class="products">
-            
+            <!--All movies will load here from API-->
         </div>
     </div>
     

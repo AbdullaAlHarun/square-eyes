@@ -5,14 +5,16 @@
   box-sizing: border-box;
 }
 
+
 /* header and menu CSS */
 .header {
-  min-height: 100vh; 
+  /* min-height: 100vh;  */
   width: 100%; 
-  background-image: linear-gradient(45deg, rgba(0,0,0,0.85),rgba(118,0,255,0.85)),
-  url(../images/main-bg.jpg);
-  background-size: cover;
-  background-position: center;
+  /* background-image: linear-gradient(45deg, rgba(0,0,0,0.85),rgba(118,0,255,0.85)),
+  url(../images/main-bg.jpg); */
+  /* background-size: cover;
+  background-position: center; */
+  margin-top: 100px;
 }
 
 nav{
@@ -78,6 +80,7 @@ nav{
   padding-top: 20%;
   padding-bottom: 12px;
 }
+
 .search {
   display: flex;
   align-items: center;
@@ -144,6 +147,104 @@ nav{
   text-align: center;
   text-decoration: none;
 }
+
+/* filter catagory section */
+
+.catagory {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  padding: 40px;
+}
+.catagory h2{
+ color: black; 
+ text-decoration: underline;
+ padding-right: 20px;
+}
+
+.catagory ul{
+  list-style: none;
+  display: flex;
+  margin-right: 20px;
+}
+
+.catagory ul li a {
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 15px; 
+  background: linear-gradient(#6a33ff, #351a80);
+  border-radius: 8px;
+  color: white;
+}
+
+/*New content body section 2024*/ 
+.container-body {
+  margin: 1% 7%;
+  padding: 0 2rem;
+}
+
+.products { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+  gap: 1rem;
+}
+
+.product {
+  background:  linear-gradient(80deg, rgba(73,95,121,1) 20%, rgba(5,111,166,1) 38%, rgba(0,71,64,1) 100%);
+  padding: 0 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 16px;
+}
+
+.products img {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+  height: 400px;
+}
+
+.product-content {
+  padding: 1rem 2rem;
+}
+
+.products .product-title {
+  font-size: 2rem;
+}
+
+.product-description {
+  text-align: justify;
+}
+
+.product-title,
+.product-price-container,
+.product-description, 
+.product-catagory {
+  padding: 0.5rem 0;
+  color: #fff;
+}
+
+.product-price-container {
+  padding-top: 2rem;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-price {
+  color: red;
+}
+
+.add-to-cart {
+  background: linear-gradient(#6a33ff, #351a80);
+  padding: 0.6rem 1.5rem;
+  font-weight: 500;
+  color: white; 
+  border-radius: 1rem;
+  text-decoration: none;
+}
+
+
 
 /* Popular Movies Sections */
 .mini-container .solo{

@@ -3,140 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" href="images/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=KoHo:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/cee46afb86.js" crossorigin="anonymous"></script>
-    <title>Square Eyes || Movies</title>
-    <link rel="stylesheet" href="css/movie.css" type="text/css">
+    <title>Movie Details</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!--Header Section-->
-    <div class="header">
-      <nav id="navBar">
-        <a href="index.html"> <img src="images/logo.png" class="logo" alt="squareeyes logos" > </a>
-        <ul class="nav-links">
-            <li> <a href="index.html" class="active">Home</a></li>
-            <li><a href="catagories.html">Catagories</a></li>
-            <li><a href="support.html">Support</a></li>
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i> My Cart</a></li>
-        </ul>
-        <a href="#" class="hero-btn"> <i class="fa-solid fa-user"></i> My Account</a>
-        <i class="fas fa-bars" onclick="togglebtn()"></i>
-        </nav>  
-    </div>
-
- <!--Movie content-->
- <section class="home">
-    <video src="video/1.mp4" autoplay muted loop>
-    </video>
-    
-    <div class="content">
-        <h2 data-text="Game of Thrones">Game of Thrones</h2>
-        <div class="rating">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star-half-stroke"></i>
-        </div>
-        
-        <div class="tags">
-            <span>18+ |</span>
-            <span>2011 - 2019 |</span>
-            <span> 4K |</span>
-            <span><i class="fa-brands fa-imdb"></i> 8.2</span>
-        </div>
-        <div class="price">
-            <span> $2.99</span>
-            <span> <button class="hero-btn">
-                    <a href="checkout.html" > Add to Watchlist  </a>
-                  </button>
-            </span>
-            <span> <button class="hero-btn .buy">
-                    <a href="checkout.html" > Buy now  </a>
-                  </button>
-            </span>
-        </div>
-        
-        <div class="movie-content">
-            <p><span>writer: </span>
-                George R.R. Martin
-            </p>
-            <p><span>Creators: </span>
-                David Benioff | D.B. Weiss
-            </p>
-            <p> <span>Cast: </span>
-                Emilia Clarke | Peter Dinklage | Kit Harington
-            </p>
-            <p> <span>Storyline: </span>
-                Nine noble families fight for control over the lands of Westeros,
-                while an ancient enemy returns after being dormant for a millennia.
-            </p>
-        </div>
-    </div> 
-</section>
-
-<!--Footer Sections-->
-<footer>
-    <div class="row">
-        <div class="col">
-            <img src="images/logo.png" class="logo">
-            <p>
-               We're a community of passionate creators and discerning viewers who share a love for exceptional video content.
-            </p>
-        </div>
-        <div class="col">
-            <h3>Head Office</h3>
-            <p>Mølleparken 4</p>
-            <p>Grunerløkka, 0459</p>
-            <p>Oslo</p>
-            <p class="email-id">info@squareeyes.com</p>
-            <h4> +47 000000000</h4>  
-        </div>
-        <div class="col">
-            <h3>Links</h3>
-            <ul>
-                <li><a href="#"></a>Coupons</li>
-                <li><a href="#"></a>Blog Post</li>
-                <li><a href="#"></a>Subscriptions</li>
-                <li><a href="#"></a>Cancelation Policy</li>
-            </ul>
-        </div>
-        <div class="col">
-            <h3>Newsletter</h3>
-            <form >
-                <i class="far fa-envelope"></i>
-                <input type="email" placeholder="Enter your email id" required>
-                <button type="submit"><i class=" fa-solid fa-arrow-right"></i></button>
-            </form>
-            <div class="social-icons">
-                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.instragram.com/"><i class="fab fa-instagram"></i></a>
-    
+    <div class="container">
+        <div class="movie-details">
+            <div class="movie-image">
+                <img src="" alt="" id="image">
+            </div>
+            <div class="movie-info">
+                <h2 id="title"></h2>
+                <p><strong>Genre:</strong> <span id="genre"></span></p>
+                <p><strong>Description:</strong> <span id="description"></span></p>
+                <p><strong>Rating:</strong> <span id="rating"></span></p>
+                <p><strong>Released:</strong> <span id="released"></span></p>
+                <p><strong>Price:</strong> $<span id="price"></span></p>
+                <p><strong>Discounted Price:</strong> $<span id="discountedPrice"></span></p>
             </div>
         </div>
     </div>
-    <hr>
-    <p class="copyright">Square Eyes &copy; 2023 - All right Reserved </p>
-</footer>
-
- <!--Javascripts-->
-    <script>
-        var navBar = document.getElementById("navBar");
-
-        function togglebtn() {
-            navBar.classList.toggle("hidemenu")
-        }
-    </script>
+    <script src="js/movie.js"></script>
 </body>
 </html>

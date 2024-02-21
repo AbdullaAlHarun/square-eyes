@@ -14,268 +14,55 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
 <body>
-
     <!--Header Section-->
     <div class="header">
-      <nav id="navBar">
-        <a href="index.html" aria-label="logo, click to go to home"> <img src="images/logo.png" class="logo" alt="squareeyes logos" > </a>
-        <ul class="nav-links">
-            <li> <a href="index.html" class="active">Home</a></li>
-            <li><a href="catagories.html">Catagories</a></li>
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping" aria-label="go to cart"></i> My Cart</a></li>
-        </ul>
-        <a href="login-form.html" class="hero-btn" aria-label="sign in button">Sign In</a>
-        <i class="fas fa-bars" aria-label="menu" onclick="togglebtn()"></i>
-       
-    </nav>
-        <div class="container search">
-            <h1>Find Unlimited Movies, Tv series and more..</h1>
-            <h3>Watch anywhere.Stream, Support, and Explore: Where Movies Meet Makers!</h3>
-            <form action="" class="search-bar">
-                <input type="text" placeholder="Search movies and TV series">
-                <button type="submit"><img src="images/search.png" alt="search icon"></button>
-            </form>
+        <nav id="navBar">
+            <a href="index.html" aria-label="logo, click to go to home"> <img src="images/logo.png" class="logo" alt="squareeyes logos" > </a>
+            <ul class="nav-links">
+                <li> <a href="index.html" class="active">Home</a></li>
+                <li><a href="catagories.html">Catagories</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="checkout.html" class="basket-icon">
+                     My Cart
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="basket-count">0</span>
+                    </a>
+                </li>
+            </ul>
+            <a href="login-form.html" class="hero-btn" aria-label="sign in button">Sign In</a>
+            <i class="fas fa-bars" aria-label="menu" onclick="togglebtn()"></i>
+        </nav>
+   
+    </div>
+
+
+    <!--Main content Section!-->
+    <div class="container-body">
+        <div class="container">
+            <div class="catagory">
+                <h2>Catagories Filter:</h2>
+                <ul>
+                    <li><a href="#">Show All</a></li>
+                    <li><a href="#">Drama</a></li> 
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Kids</a></li> 
+                    <li><a href="#">Comedy</a></li>
+                    <li><a href="#">Horror</a></li>
+                </ul>
+            </div>
+            <div class="products">
+                
+            </div>
+        </div>
+
+        <!--All Movie loading Section -->
+        <div class="products">
+            <!--All movies will load here from API-->
         </div>
     </div>
     
-    <!--Content Section-->
-    <div class="container">
-        <h2 class="sub-title">Popular Movies</h2>
-        <div class="popular-movies">
-            <div>
-                <a href="movie.html"><img src="images/popular1.PNG" alt="movie poster"> </a>
-                <h3>Life is Beutiful</h3>
-                <p>Drama, Comedy</p>
-            </div>
-            <div>
-                <a href="movie.html"><img src="images/popular2.PNG" alt="movie poster"> </a>
-                <h3>Life is Beutiful</h3>
-                <p>Drama, Comedy</p>
-            </div>
-            <div>
-                <a href="movie.html"><img src="images/popular3.PNG" alt="movie poster"> </a>
-                <h3>Life is Beutiful</h3>
-                <p>Drama, Comedy</p>
-            </div>
-            <div>
-                <a href="movie.html"> <img src="images/popular4.PNG" alt="movie poster"> </a>
-                <h3>Life is Beutiful</h3>
-                <p>Drama, Comedy</p>
-            </div>
-            <div>
-                <a href="movie.html"><img src="images/popular5.PNG" alt="movie poster"> </a>
-                <h3>Life is Beutiful</h3>
-                <p>Drama, Comedy</p>
-            </div>
-            <div>
-                <a href="movie.html"><img src="images/popular5.PNG" alt="movie poster"> </a>
-                <h3>Life is Beutiful</h3>
-                <p>Drama, Comedy</p>
-            </div>
-            <div>
-                <a href="movie.html"><img src="images/popular1.PNG" alt="movie poster"> </a>
-                <h3>Life is Beutiful</h3>
-                <p>Drama, Comedy</p>
-            </div>
-            <div>
-                <a href="movie.html"><img src="images/popular2.PNG" alt="movie poster"> </a>
-                <h3>Life is Beutiful</h3>
-                <p>Drama, Comedy</p>
-            </div>
-            <div>
-                <a href="movie.html"><img src="images/popular2.PNG" alt="movie poster"> </a>
-                <h3>Life is Beutiful</h3>
-                <p>Drama, Comedy</p>
-            </div>
-            <div>
-                <a href="movie.html"><img src="images/popular1.PNG" alt="movie poster"> </a>
-                <h3>Life is Beutiful</h3>
-                <p>Drama, Comedy</p>
-            </div>
-        </div>
-
-        <!--Popular TV Series Sections-->
-        <h2 class="sub-title">Popular TV Series</h2>
-        <div class="tv-series">
-            <div>
-                <a href="movie.html"><img src="images/tv1.PNG" alt="breaking bad tv series poster"> </a>
-                <h3>Breaking Bad</h3>
-                <p>Drama, Trilar</p>
-            </div>
-            <div>
-                <a href="movie.html"> <img src="images/tv1.PNG" alt="breaking bad tv series poster"> </a>
-                <h3>Breaking Bad</h3>
-                <p>Drama, Trilar</p>
-            </div>
-            <div>
-                <a href="movie.html"><img src="images/tv1.PNG" alt="breaking bad tv series poster"> </a>
-                <h3>Breaking Bad</h3>
-                <p>Drama, Trilar</p>
-            </div>
-            <div>
-                <a href="movie.html"> <img src="images/tv1.PNG" alt="breaking bad tv series poster"> </a>
-                <h3>Breaking Bad</h3>
-                <p>Drama, Trilar</p>
-            </div>
-            <div>
-                <a href="movie.html"> <img src="images/tv1.PNG" alt="breaking bad tv series poster"> </a>
-                <h3>Breaking Bad</h3>
-                <p>Drama, Trilar</p>
-            </div>
-            <div>
-                <a href="movie.html"><img src="images/tv1.PNG" alt="breaking bad tv series poster"> </a>
-                <h3>Breaking Bad</h3>
-                <p>Drama, Trilar</p>
-            </div>
-            <div>
-                <a href="movie.html"><img src="images/tv1.PNG" alt="breaking bad tv series poster"> </a>
-                <h3>Breaking Bad</h3>
-                <p>Drama, Trilar</p>
-            </div>
-            <div>
-                <a href="movie.html"><img src="images/tv1.PNG" alt="breaking bad tv series poster"> </a>
-                <h3>Breaking Bad</h3>
-                <p>Drama, Trilar</p>
-            </div>
-            <div>
-                <a href="movie.html"><img src="images/tv1.PNG" alt="breaking bad tv series poster"> </a>
-                <h3>Breaking Bad</h3>
-                <p>Drama, Trilar</p>
-            </div>
-            <div>
-                <a href="movie.html"><img src="images/tv1.PNG" alt="breaking bad tv series poster"> </a>
-                <h3>Breaking Bad</h3>
-                <p>Drama, Trilar</p>
-            </div>
-        </div>
-
-        <!--App Store promotion Sections-->
-        <div class="solo">
-            <h3>Watch, Love, Support! <br> Be a Part of the Film Magic!</h3>
-            <p>Tap the icon to launch the app and start
-                 enjoying your favorite movies
-            </p>
-            <div class="app">
-                <img src="images/google-play.png" alt="google play images">
-                <img src="images/apple.png" alt="apple store images">
-            </div>
-        </div>
-
-         <!--Upcoming movies Sections-->
-        <h2 class="sub-title">Upcoming Movies</h2>
-        <div class="popular-movies">
-            <div>
-                <a href="movie.html"><img src="images/popular5.PNG" alt="movie poster"> </a>
-                <h3>Life is Beutiful</h3>
-                <p>Drama, Comedy</p>
-            </div>
-            <div>
-                <a href="movie.html"><img src="images/popular5.PNG" alt="movie poster"> </a>
-                <h3>Life is Beutiful</h3>
-                <p>Drama, Comedy</p>
-            </div>
-            <div>
-                <a href="movie.html"><img src="images/popular5.PNG" alt="movie poster"> </a>
-                <h3>Life is Beutiful</h3>
-                <p>Drama, Comedy</p>
-            </div>
-            <div>
-                <a href="movie.html"> <img src="images/popular5.PNG" alt="movie poster"> </a>
-                <h3>Life is Beutiful</h3>
-                <p>Drama, Comedy</p>
-            </div>
-            <div>
-                <a href="movie.html"><img src="images/popular5.PNG" alt="movie poster"> </a>
-                <h3>Life is Beutiful</h3>
-                <p>Drama, Comedy</p>
-            </div>
-            <div>
-                <a href="movie.html"><img src="images/popular5.PNG" alt="movie poster"> </a>
-                <h3>Life is Beutiful</h3>
-                <p>Drama, Comedy</p>
-            </div>
-            <div>
-                <a href="movie.html"><img src="images/popular5.PNG" alt="movie poster"> </a>
-                <h3>Life is Beutiful</h3>
-                <p>Drama, Comedy</p>
-            </div>
-            <div>
-                <a href="movie.html"><img src="images/popular5.PNG" alt="movie poster"> </a>
-                <h3>Life is Beutiful</h3>
-                <p>Drama, Comedy</p>
-            </div>
-            <div>
-                <a href="movie.html"><img src="images/popular5.PNG" alt="movie poster"> </a>
-                <h3>Life is Beutiful</h3>
-                <p>Drama, Comedy</p>
-            </div>
-            <div>
-                <a href="movie.html"><img src="images/popular5.PNG" alt="movie poster"> </a>
-                <h3>Life is Beutiful</h3>
-                <p>Drama, Comedy</p>
-            </div>
-        </div>
-
-        <!--Watch for Free Section-->
-        <h2 class="sub-title">Watch for Free</h2>
-        <div class="tv-series">
-            <div>
-                <a href="movie.html"><img src="images/tv1.PNG" alt="breaking bad tv series poster"> </a>
-                <h3>Breaking Bad</h3>
-                <p>Drama, Trilar</p>
-            </div>
-            <div>
-                <a href="movie.html"> <img src="images/tv1.PNG" alt="breaking bad tv series poster"> </a>
-                <h3>Breaking Bad</h3>
-                <p>Drama, Trilar</p>
-            </div>
-            <div>
-                <a href="movie.html"><img src="images/tv1.PNG" alt="breaking bad tv series poster"> </a>
-                <h3>Breaking Bad</h3>
-                <p>Drama, Trilar</p>
-            </div>
-            <div>
-                <a href="movie.html"> <img src="images/tv1.PNG" alt="breaking bad tv series poster"> </a>
-                <h3>Breaking Bad</h3>
-                <p>Drama, Trilar</p>
-            </div>
-            <div>
-                <a href="movie.html"> <img src="images/tv1.PNG" alt="breaking bad tv series poster"> </a>
-                <h3>Breaking Bad</h3>
-                <p>Drama, Trilar</p>
-            </div>
-            <div>
-                <a href="movie.html"><img src="images/tv1.PNG" alt="breaking bad tv series poster"> </a>
-                <h3>Breaking Bad</h3>
-                <p>Drama, Trilar</p>
-            </div>
-            <div>
-                <a href="movie.html"><img src="images/tv1.PNG" alt="breaking bad tv series poster"> </a>
-                <h3>Breaking Bad</h3>
-                <p>Drama, Trilar</p>
-            </div>
-            <div>
-                <a href="movie.html"><img src="images/tv1.PNG" alt="breaking bad tv series poster"> </a>
-                <h3>Breaking Bad</h3>
-                <p>Drama, Trilar</p>
-            </div>
-            <div>
-                <a href="movie.html"><img src="images/tv1.PNG" alt="breaking bad tv series poster"> </a>
-                <h3>Breaking Bad</h3>
-                <p>Drama, Trilar</p>
-            </div>
-            <div>
-                <a href="movie.html"><img src="images/tv1.PNG" alt="breaking bad tv series poster"> </a>
-                <h3>Breaking Bad</h3>
-                <p>Drama, Trilar</p>
-            </div>
-        </div>
-        <a href="#" class="to-top">
-            <i class="fas fa-chevron-up"></i>
-        </a>
-    </div>
+ 
 
 <!--Footer Sections-->
 <footer>
@@ -324,21 +111,7 @@
 </footer>
 
 <!--Javascripts-->
-    <script>
-        var navBar = document.getElementById("navBar");
-
-        function togglebtn() {
-            navBar.classList.toggle("hidemenu")
-        }
-        const toTop = document.querySelector(".to-top");
-
-        window.addEventListener("scroll", () => {
-        if (window.pageYOffset > 100) {
-            toTop.classList.add("active");
-        } else {
-            toTop.classList.remove("active");
-        }
-        })
-    </script>
+    <script src="js/nav.js"></script>
+    <script src="js/app.js"> </script>
 </body>
 </html>

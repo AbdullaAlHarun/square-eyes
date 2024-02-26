@@ -8,12 +8,7 @@
 
 /* header and menu CSS */
 .header {
-  /* min-height: 100vh;  */
   width: 100%; 
-  /* background-image: linear-gradient(45deg, rgba(0,0,0,0.85),rgba(118,0,255,0.85)),
-  url(../images/main-bg.jpg); */
-  /* background-size: cover;
-  background-position: center; */
   margin-top: 100px;
 }
 
@@ -183,7 +178,7 @@ nav{
   padding: 0 2rem;
 }
 
-.products { 
+#movies { 
   display: grid; 
   grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
   gap: 1rem;
@@ -198,7 +193,7 @@ nav{
   border-radius: 16px;
 }
 
-.products img {
+#movies img {
   width: 100%;
   border-radius: 16px 16px 0 0;
   height: 400px;
@@ -501,7 +496,43 @@ footer {
 nav .fa-bars {
   display: none;
 }
+/*checkout*/
 
+.checkout-container {
+  padding: 2% 7%;
+  margin: 0 auto;
+}
+
+.hero-btn-pay,
+.checkout-title {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.remove-btn {
+  padding: 4px; 
+  border-radius: 6px;
+  background-color: red;
+  color: white;
+}
+
+.movie-item {
+  padding: 10px; 
+  font-weight: 600;
+  font-size: 20px;
+  border: 2px solid black;
+  margin-bottom: 8px;
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+}
+
+.total-price {
+  font-weight: 800;
+  font-size: 24px;
+}
 /* Media queary for responsive */
 @media (max-width: 700px) {
   .logo { 

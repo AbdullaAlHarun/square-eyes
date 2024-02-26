@@ -23,10 +23,11 @@
                 <li><a href="catagories.html">Catagories</a></li>
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="checkout.html" class="basket-icon">
-                     My Cart
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <span id="basket-count">0</span>
+                <li>
+                    <a onclick="goToCheckout()" href="checkout.html" class="basket-icon">
+                        <span id="selectedItemCount"></span> 
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        My Cart    
                     </a>
                 </li>
             </ul>
@@ -41,23 +42,19 @@
     <div class="container-body">
         <div class="container">
             <div class="catagory">
-                <h2>Catagories Filter:</h2>
+            
                 <ul>
                     <li><a href="#">Show All</a></li>
                     <li><a href="#">Drama</a></li> 
                     <li><a href="#">Action</a></li>
                     <li><a href="#">Kids</a></li> 
                     <li><a href="#">Comedy</a></li>
-                    <li><a href="#">Horror</a></li>
                 </ul>
-            </div>
-            <div class="products">
-                
             </div>
         </div>
 
         <!--All Movie loading Section -->
-        <div class="products">
+        <div id="movies">
             <!--All movies will load here from API-->
         </div>
     </div>

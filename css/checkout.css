@@ -287,6 +287,8 @@ footer {
   padding: 8px;
  }
 
+ 
+
 /* Media queary for responsive */
 @media (max-width: 700px) {
   .logo { 

@@ -3,26 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Details</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=KoHo:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cee46afb86.js" crossorigin="anonymous"></script>
+    <title>Square Eyes</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/movie.css" type="text/css">
 </head>
 <body>
-    <div class="container">
+    <!--Header Section-->
+    <div class="header">
+        <nav id="navBar">
+            <a href="index.html" aria-label="logo, click to go to home"> <img src="images/logo.png" class="logo" alt="squareeyes logos" > </a>
+            <ul class="nav-links">
+                <li> <a href="index.html" class="active">Home</a></li>
+                <li><a href="catagories.html">Catagories</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <a onclick="goToCheckout()" href="checkout.html" class="basket-icon">
+                        <span id="selectedItemCount"></span> 
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        My Cart    
+                    </a>
+                </li>
+            </ul>
+            <a href="login-form.html" class="hero-btn" aria-label="sign in button">Sign In</a>
+            <i class="fas fa-bars" aria-label="menu" onclick="togglebtn()"></i>
+        </nav>
+   
+    </div>
+
+
+    <div class="movie-container">
         <div class="movie-details">
             <div class="movie-image">
                 <img src="" alt="" id="image">
             </div>
             <div class="movie-info">
-                <h2 id="title"></h2>
+                <div>
+                    <h2 id="title"></h2>
                 <p><strong>Genre:</strong> <span id="genre"></span></p>
-                <p><strong>Description:</strong> <span id="description"></span></p>
-                <p><strong>Rating:</strong> <span id="rating"></span></p>
-                <p><strong>Released:</strong> <span id="released"></span></p>
-                <p><strong>Price:</strong> $<span id="price"></span></p>
-                <p><strong>Discounted Price:</strong> $<span id="discountedPrice"></span></p>
+                </div>
+                <div>
+                    <p class="movie-des"><strong>Description:</strong> <span id="description"></span></p>
+                </div>
+                <div>
+                    <p><strong>Rating:</strong> <span id="rating"></span></p>
+                    <p><strong>Released:</strong> <span id="released"></span></p>
+                </div>
+                <div>
+                    <p><strong>Price:</strong> $<span id="price"></span></p>
+                    <p><strong>Discounted Price:</strong> $<span id="discountedPrice"></span></p>
+                </div>
             </div>
         </div>
     </div>
+    <!--Footer Sections-->
+<footer>
+    <div class="row">
+        <div class="col">
+            <img src="images/logo.png" class="logo">
+            <p>
+               We're a community of passionate creators and discerning viewers who share a love for exceptional video content.
+            </p>
+        </div>
+        <div class="col">
+            <h3>Head Office</h3>
+            <p>Mølleparken 4</p>
+            <p>Grunerløkka, 0459</p>
+            <p>Oslo</p>
+            <p class="email-id">info@squareeyes.com</p>
+            <h4> +47 000000000</h4> 
+        </div>
+        <div class="col">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="#"></a>Coupons</li>
+                <li><a href="#"></a>Blog Post</li>
+                <li><a href="#"></a>Subscriptions</li>
+                <li><a href="#"></a>Cancelation Policy</li>
+            </ul>
+        </div>
+        <div class="col">
+            <h3>Newsletter</h3>
+            <form >
+                <i class="far fa-envelope"></i>
+                <input type="email" placeholder="Enter your email id" required>
+                <button type="submit"><i class=" fa-solid fa-arrow-right"></i></button>
+            </form>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instragram.com/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p class="copyright">Square Eyes &copy; 2023 - All right Reserved </p>
+</footer>
+
     <script src="js/movie.js"></script>
 </body>
 </html>
